@@ -1,16 +1,17 @@
-from pydantic import BaseModel, Field, validator
-from typing import List, Optional, Dict, Any, Set, Union
+from pydantic import BaseModel, Field
+from typing import List, Optional, Dict, Union
 import pandas as pd
 from datetime import datetime, timedelta
 import calendar
 from collections import Counter
+from utils.database import TransactionDB
 
 class Transaction(BaseModel):
     user_id: str
     timestamp: datetime = Field(default_factory=datetime.now)
     transaction_type: str
     transaction_method: str
-    amount: float
+    amount: Optional[float] = None
     segment_tag: str
     
     def is_spend(self) -> bool:
@@ -20,7 +21,7 @@ class Transaction(BaseModel):
         return self.transaction_type == "CASH-IN"
 
 class DataFetcher:
-    def __init__(self, file_path: str = None, data: pd.DataFrame = None):
+    def __init__(self, file_path: str = None, data: pd.DataFrame = None, db_path: str = "transactions.db"):
         """Initialize DataFetcher with either a file path or a pandas DataFrame"""
         if file_path:
             self.data = pd.read_csv(file_path)
@@ -31,6 +32,37 @@ class DataFetcher:
         
         # Convert timestamp column to datetime
         self.data['timestamp'] = pd.to_datetime(self.data['timestamp'])
+        
+        # Ensure amount column is float and handle null values
+        self.data['amount'] = pd.to_numeric(self.data['amount'], errors='coerce')
+        
+        # Initialize database
+        self.db = TransactionDB(db_path)
+        
+        # Convert data to list of dictionaries and validate
+        transactions = []
+        for _, row in self.data.iterrows():
+            try:
+                transaction = {
+                    'user_id': str(row['user_id']),
+                    'timestamp': row['timestamp'],
+                    'transaction_type': str(row['transaction_type']),
+                    'transaction_method': str(row['transaction_method']),
+                    'amount': float(row['amount']) if pd.notna(row['amount']) else None,
+                    'segment_tag': str(row['segment_tag'])
+                }
+                transactions.append(transaction)
+            except Exception as e:
+                print(f"Error processing row: {row}")
+                print(f"Error details: {str(e)}")
+                continue
+        
+        # Insert validated transactions into database
+        try:
+            self.db.insert_transactions(transactions)
+        except Exception as e:
+            print(f"Error inserting transactions into database: {str(e)}")
+            raise
         
         # Class attributes
         self.user_ids = set(self.data["user_id"].unique())
@@ -50,119 +82,105 @@ class DataFetcher:
             print(f"User ID {user_id} not found.")
             return []
         
-        # Get start and end of month then filtered transactions within this timestamp
-        start_of_month = self._month_start_date(year, month)
-        end_of_month = self._month_end_date(year, month)
-        
-        mask = (self.data['timestamp'] >= start_of_month) & (self.data['timestamp'] <= end_of_month)
+        # Get transactions from database
         if user_id:
-            mask = mask & (self.data['user_id'] == user_id)
+            transactions = self.db.get_monthly_transactions(user_id, year, month)
+        else:
+            # If no user_id specified, fall back to pandas filtering
+            start_of_month = self._month_start_date(year, month)
+            end_of_month = self._month_end_date(year, month)
+            mask = (self.data['timestamp'] >= start_of_month) & (self.data['timestamp'] <= end_of_month)
+            filtered_df = self.data[mask]
+            transactions = filtered_df.to_dict('records')
         
-        filtered_df = self.data[mask]
-        
-        # Convert only the filtered rows to Transaction objects
+        # Convert to Transaction objects
         return [
             Transaction(
-                user_id=row.user_id,
-                timestamp=row.timestamp,
-                transaction_type=row.transaction_type,
-                transaction_method=row.transaction_method,
-                amount=row.amount,
-                segment_tag=row.segment_tag
-            ) for _, row in filtered_df.iterrows()
+                user_id=user_id,  # Use the provided user_id
+                timestamp=t['timestamp'],
+                transaction_type=t['transaction_type'],
+                transaction_method=t['transaction_method'],
+                amount=t['amount'],
+                segment_tag=t['segment_tag']
+            ) for t in transactions
         ]
-        
+    
     def _monthly_spend(self, year: int, month: int, user_id: Optional[str] = None) -> tuple:
-        transactions = self._monthly_transactions(year, month, user_id)
-        spend_transactions = [t for t in transactions if t.is_spend()]
-        return sum(t.amount for t in spend_transactions), len(spend_transactions), spend_transactions
+        if user_id:
+            # Get from database
+            profile = self.db.get_monthly_profile(user_id, year, month)
+            return profile['total_spend'], profile['spend_count'], []
+        else:
+            # Fall back to pandas filtering
+            transactions = self._monthly_transactions(year, month, user_id)
+            spend_transactions = [t for t in transactions if t.is_spend()]
+            return sum(t.amount for t in spend_transactions), len(spend_transactions), spend_transactions
     
     def _monthly_cash_in(self, year: int, month: int, user_id: Optional[str] = None) -> tuple:
-        transactions = self._monthly_transactions(year, month, user_id)
-        cash_in_transactions = [t for t in transactions if t.is_cash_in()]
-        return sum(t.amount for t in cash_in_transactions), len(cash_in_transactions), cash_in_transactions
+        if user_id:
+            # Get from database
+            profile = self.db.get_monthly_profile(user_id, year, month)
+            return profile['total_cash_in'], profile['cash_in_count'], []
+        else:
+            # Fall back to pandas filtering
+            transactions = self._monthly_transactions(year, month, user_id)
+            cash_in_transactions = [t for t in transactions if t.is_cash_in()]
+            return sum(t.amount for t in cash_in_transactions), len(cash_in_transactions), cash_in_transactions
     
     def _format_tag(self, tag: str) -> str:
         """Convert a tag from UPPER_CASE to lowercase with spaces"""
         return tag.lower().replace('_', ' ')
     
     def monthly_profile(self, year: int, month: int, user_id: str) -> str:
+        """Generate a concise monthly profile for a user with essential transaction information"""
         # Error handling
         if user_id not in self.user_ids:
             return f"Error: User ID {user_id} not found."
         if not (1 <= month <= 12):
              return "Error: Invalid month, must be from 1 to 12" 
 
-        """Useful stats section for user profile"""
-        spend_amount, spend_count, spend_transactions = self._monthly_spend(year, month, user_id)
-        cash_in_amount, cash_in_count, cash_in_transactions = self._monthly_cash_in(year, month, user_id)
-
-        # Transactions by transaction_method
-        spend_by_method = Counter([t.transaction_method for t in spend_transactions])
-        spend_by_method_total = spend_by_method.total()
-        cash_in_by_method = Counter([t.transaction_method for t in cash_in_transactions])
-        cash_in_by_method_total = cash_in_by_method.total()
-		
-		# Fetch data for the specified month ONLY
-        transactions = self._monthly_transactions(year, month, user_id)
+        # Get profile data from database
+        profile = self.db.get_monthly_profile(user_id, year, month)
         
-        # Get user-specific segments only
-        user_segments = set()
-        for transaction in transactions:
-            user_segments.add(transaction.segment_tag)
+        # Format segments
+        formatted_segments = [self._format_tag(tag) for tag in profile['segments']]
         
-        # Format the segments in lowercase with spaces
-        formatted_segments = [self._format_tag(tag) for tag in user_segments]
-
-        """Formulate user profile section """        
-		    # Prepare the header for the insights text
-        insights = [f"User {user_id} monthly transactions Summary (Timestamp: {year}-{month:02d})"]
-		
-		    # Handle case where there's no data for the month
-        if not transactions:
-             insights.append("- No transaction data found for this month.")
-             return "\n".join(insights)
-		
-        # User segments - only show those belonging to this user
-        insights.append(f"- This user is tagged with {', '.join(formatted_segments)}")
+        # Get transactions
+        spend_transactions = [t for t in self._monthly_transactions(year, month, user_id) if t.is_spend()]
+        cash_in_transactions = [t for t in self._monthly_transactions(year, month, user_id) if t.is_cash_in()]
         
-        # User total spend with amounts listed
-        insights.append(f"- Total spend is {spend_amount} with {spend_count} transactions")
-        insights.append("- Spend transactions:")
-        for i, transaction in enumerate(spend_transactions, 1):
-            insights.append(f"  {i}. {transaction.amount} via {transaction.transaction_method.lower()}")
+        # Format the concise profile
+        profile_lines = [
+            f"User {user_id} ({year}-{month:02d})",
+            f"Segments: {', '.join(formatted_segments)}",
+            f"Spend: {profile['total_spend']:.2f} ({profile['spend_count']} txns)"
+        ]
         
-        # User spending method
-        spend_by_method_display = []
-        for method, count in spend_by_method.most_common(5):
-            percentage = (count / spend_by_method_total)
-            spend_by_method_display.append(f"{method.lower()} with {percentage:.2%}")
-        spend_by_method_summary = ", ".join(spend_by_method_display)
-        insights.append(f"- Spending methods include {spend_by_method_summary}")
+        # Add spend transactions
+        if spend_transactions:
+            profile_lines.append("Spend transactions:")
+            for t in sorted(spend_transactions, key=lambda x: x.timestamp):
+                date_str = t.timestamp.strftime("%Y-%m-%d")
+                profile_lines.append(f"  {date_str}: {t.amount:.2f} via {t.transaction_method.lower()}")
         
-        # User total cash-in with amounts listed
-        insights.append(f"- Total cash-in is {cash_in_amount} with {cash_in_count} transactions")
-        insights.append("- Cash-in transactions:")
-        for i, transaction in enumerate(cash_in_transactions, 1):
-            insights.append(f"  {i}. {transaction.amount} via {transaction.transaction_method.lower()}")
+        profile_lines.append(f"Cash-in: {profile['total_cash_in']:.2f} ({profile['cash_in_count']} txns)")
         
-        # User cash-in method
-        cash_in_by_method_display = []
-        for method, count in cash_in_by_method.most_common(5):
-            percentage = (count / cash_in_by_method_total)
-            cash_in_by_method_display.append(f"{method.lower()} with {percentage:.2%}")
-        cash_in_by_method_summary = ", ".join(cash_in_by_method_display)
-        insights.append(f"- Cash-in methods include {cash_in_by_method_summary}")
+        # Add cash-in transactions
+        if cash_in_transactions:
+            profile_lines.append("Cash-in transactions:")
+            for t in sorted(cash_in_transactions, key=lambda x: x.timestamp):
+                date_str = t.timestamp.strftime("%Y-%m-%d")
+                profile_lines.append(f"  {date_str}: {t.amount:.2f} via {t.transaction_method.lower()}")
         
-        # User spend/cash-in ratio, check for cash-in
-        if cash_in_amount > 0:
-            insights.append(f"- Spending accounts for {(spend_amount / cash_in_amount):.2%} of total cash-in")
-        else:
-            insights.append("- The ratio of spending to cash-in is not applicable, as the user did not deposit any funds")
+        # Add spend/cash-in ratio if applicable
+        if profile['total_cash_in'] > 0:
+            ratio = profile['total_spend'] / profile['total_cash_in']
+            profile_lines.append(f"Spend/Cash-in ratio: {ratio:.2%}")
         
-        return "\n".join(insights)
+        return "\n".join(profile_lines)
     
     def _monthly_transactions_by_user(self, year: int, month: int) -> Dict[str, int]:
+        """Get transaction counts by user for a specific month"""
         # Get start and end of month
         start_of_month = self._month_start_date(year, month)
         end_of_month = self._month_end_date(year, month)
@@ -178,19 +196,7 @@ class DataFetcher:
     
     def active_users(self, year: int, month: int, min_transactions: int=3,
                       max_users: int=1000, min_spend: float=0, min_cash_in: float=0) -> List[str]:
-        """Get a list of active users for a specific month based on multiple criteria
-
-        Args:
-            year (int): Target year
-            month (int): Target month (1-12)
-            min_transactions (int, optional): Minimum of transactions required. Defaults to 3.
-            max_users (int, optional): Maximum number of users to return. Defaults to 1000.
-            min_spend (float, optional): Minimum spend amount required. Defaults to 0.
-            min_cash_in (float, optional): Minimum cash-in amount required. Defaults to 0.
-
-        Returns:
-            List[str]: List of user_ids meet all criteria
-        """
+        """Get a list of active users for a specific month based on multiple criteria"""
         if not (1 <= month <=12):
             raise ValueError("Month must be between 1 and 12.")
         
@@ -213,3 +219,110 @@ class DataFetcher:
             
         chosen_users = filtered_users[:max_users]
         return [user_id for user_id, _ in chosen_users]
+    
+    # def get_segment_users(self, year: int, month: int, 
+    #                      min_transactions: int = 3, max_users: int = 50,
+    #                      min_spend: float = 0, min_cash_in: float = 0) -> Dict[str, List[str]]:
+    #     """Get active users grouped by their segments for a given month
+        
+    #     if not (1 <= month <= 12):
+    #         raise ValueError("Month must be between 1 and 12.")
+        
+    #     # Get all active users first
+    #     active_users = self.active_users(
+    #         year=year,
+    #         month=month,
+    #         min_transactions=min_transactions,
+    #         max_users=None,  # Don't limit here, we'll filter by segment first
+    #         min_spend=min_spend,
+    #         min_cash_in=min_cash_in
+    #     )
+        
+    #     # Initialize dictionary to store users by segment
+    #     segment_users_dict = {}
+        
+    #     # Get unique segments from the dataset
+    #     unique_segments = self.data['segment_tag'].unique()
+        
+    #     # For each segment, find users who belong to it
+    #     for segment in unique_segments:
+    #         # Get all users in this segment
+    #         segment_users = []
+    #         for user_id in active_users:
+    #             # Get user's segment
+    #             user_segment = self.data[self.data['user_id'] == user_id].iloc[0]['segment_tag']
+    #             # Check if user belongs to this segment
+    #             if user_segment == segment:
+    #                 segment_users.append(user_id)
+            
+    #         # Only add segment to dictionary if it has at least max_users (50) users
+    #         if len(segment_users) >= max_users:
+    #             # Take exactly max_users (50) users
+    #             segment_users_dict[segment] = segment_users[:max_users]
+        
+    #     return segment_users_dict
+
+    def get_segment_users(self, year: int, month: int, 
+                     min_transactions: int = 3, max_users: int = 50,
+                     min_spend: float = 0, min_cash_in: float = 0) -> Dict[str, List[str]]:
+        """Get active users grouped by their segments for a given month
+        
+        Args:
+            year (int): Target year
+            month (int): Target month (1-12)
+            min_transactions (int): Minimum number of transactions required
+            max_users (int): Maximum number of users to return per segment (default: 50)
+            min_spend (float): Minimum spend amount required
+            min_cash_in (float): Minimum cash-in amount required
+            
+        Returns:
+            Dict[str, List[str]]: Dictionary with segment names as keys and lists of user IDs as values
+        """
+        if not (1 <= month <= 12):
+            raise ValueError("Month must be between 1 and 12.")
+        
+        # Get all active users first - keeping this part as requested
+        active_users = self.active_users(
+            year=year,
+            month=month,
+            min_transactions=min_transactions,
+            max_users=None,  # Don't limit here, we'll filter by segment first
+            min_spend=min_spend,
+            min_cash_in=min_cash_in
+        )
+        
+        # Create a look-up dictionary for user segments (optimize segment lookups)
+        user_segments = {}
+        
+        # Filter the data once to get monthly data (more efficient)
+        start_of_month = self._month_start_date(year, month)
+        end_of_month = self._month_end_date(year, month)
+        monthly_mask = (self.data['timestamp'] >= start_of_month) & (self.data['timestamp'] <= end_of_month)
+        monthly_data = self.data[monthly_mask]
+        
+        # For active users, get their segment (use vectorized operations)
+        if active_users:
+            # Filter to only include active users
+            active_user_data = monthly_data[monthly_data['user_id'].isin(active_users)]
+            
+            # Group by user_id and find the most recent segment for each user
+            for user_id in active_users:
+                user_rows = active_user_data[active_user_data['user_id'] == user_id]
+                if not user_rows.empty:
+                    # Get the latest transaction's segment for this user
+                    latest_tx = user_rows.loc[user_rows['timestamp'].idxmax()]
+                    user_segments[user_id] = latest_tx['segment_tag']
+        
+        # Initialize segment dictionary and group users
+        segment_users_dict = {}
+        
+        # Group users by segment
+        for user_id, segment in user_segments.items():
+            if segment not in segment_users_dict:
+                segment_users_dict[segment] = []
+            segment_users_dict[segment].append(user_id)
+        
+        # Filter to only include segments with enough users and apply max_users limit
+        return {segment: users[:max_users] 
+                for segment, users in segment_users_dict.items() 
+                if len(users) >= max_users}
