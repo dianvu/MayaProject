@@ -1,3 +1,4 @@
-data/ai-insights_full.csv
+raw_data/ai-insights_full.csv
 data/transactions.csv
-transactions.db
+data/transactions.db
+.env

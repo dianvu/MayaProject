@@ -3,14 +3,13 @@ import pandas as pd
 from datetime import datetime
 
 class DataProcessor:
-    def __init__(self, file_path: str, input_file: str, output_file: str = None):
-        self.file_path = file_path
+    def __init__(self, input_file: str, output_file: str = None):
         self.input_file = input_file
-        self.output_file = output_file or "transactions.csv"
+        self.output_file = output_file
     
     def process(self):
         # Read the input data
-        data = pd.read_csv(os.path.join(self.file_path, self.input_file))
+        data = pd.read_csv(self.input_file)
 
         # Rename columns
         column_names = [
@@ -43,4 +42,4 @@ class DataProcessor:
         data.drop(columns=["segment_tag1", "segment_tag2", "segment_tag3"], inplace=True)
 
         # Save processed file
-        data.to_csv(os.path.join(self.file_path, self.output_file), index=False)
+        data.to_csv(self.output_file, index=False)

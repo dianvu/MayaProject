@@ -39,7 +39,7 @@ Thought Process:
 5. Calculate Spend vs Cash-in Ratio: 680.4237 / 965.5426 = ~70.47%.
 6. Analyze Spending Methods: Dominated by 'send money' (50%) and 'qr' (37.5%). Maya shop is minor (12.5%).
 7. Analyze Cash-in Methods: Dominated by 'bank transfer' (75%). 'send money' is smaller (25%).
-8. Synthesize Insights: The user spent significantly less than their cash-in (approx. 70%), suggesting a potential surplus or savings for the month. Spending is diverse (send money, QR, shop). Cash-in is primarily via bank transfers. The user tags present a mixed profile (hustler/gaming vs. prudent planner).
+8. Synthesize Insights: The user spent significantly less than their cash-in (approx. 70%). Spending is diverse (send money, QR, shop). Cash-in is primarily via bank transfers. The user tags present a mixed profile (hustler/gaming vs. prudent planner).
 
 Based on the step-by-step analysis, generate a concise executive summary. Output only the summary text.
 """
