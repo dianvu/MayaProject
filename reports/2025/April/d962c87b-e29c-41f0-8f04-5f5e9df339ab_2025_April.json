@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "d962c87b-e29c-41f0-8f04-5f5e9df339ab",
+        "year": 2025,
+        "month": "April"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User d962c87b (April 2025)\n\nThe user spent $3,402.12 across 40 transactions, primarily through send money (64.40%) and QR payments (33.99%), with minimal Maya shop usage (1.61%). Cash-in totaled $4,827.71 via 20 transactions, predominantly through bank transfers (90.42%) with some send money receipts (9.58%).\n\nThe user maintains a positive financial balance, with cash-in exceeding spending by approximately $1,425. Their transaction pattern combines characteristics of \"professional hustlers,\" \"loan and gaming,\" and \"prudent planners,\" suggesting a financially active user who manages diverse payment methods while maintaining net positive cash flow.",
+        "recommendations": "# Financial Recommendations\n\nBased on your April 2025 transaction data, here are personalized recommendations to enhance your financial health:\n\n1. **Increase Your Emergency Fund**: You're saving approximately 30% of your income (\u20b11,425 monthly), which is excellent. Consider allocating 50% of these savings to an emergency fund until you reach 3-6 months of expenses (\u20b110,200-\u20b120,400).\n\n2. **Diversify Payment Methods**: 64.4% of your spending is through send money transfers. Consider using QR payments more frequently for better expense tracking and potential rewards/cashback opportunities.\n\n3. **Budget Allocation Review**: With 40 transactions totaling \u20b13,402 monthly, your average transaction is \u20b185. Consider implementing a category-based budget to identify potential areas for optimization, especially since your \"professional hustlers\" tag suggests multiple income streams that may benefit from structured expense tracking.\n\n4. **Debt Management Strategy**: Your \"loan and gaming\" tag indicates potential debt obligations. Prioritize high-interest debt repayment using a portion of your monthly savings to improve long-term financial health.\n\n5. **Automated Savings Plan**: As a \"prudent planner,\" set up automatic transfers of 10-15% of your cash-ins to a dedicated savings or investment account immediately upon receipt to strengthen your disciplined approach to financial management."
+    },
+    "evaluation": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.68
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.56
+        }
+    },
+    "chosen_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

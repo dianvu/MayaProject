@@ -21,7 +21,7 @@ class Transaction(BaseModel): # Pydantic model used for validation
         return self.transaction_type == "CASH-IN"
 
 class DataFetcher:
-    def __init__(self, processed_csv_path: str, db_path: str = "data/transactions.db", force_db_reload: bool = False):
+    def __init__(self, processed_csv_path: str, db_path: str = "data/transactions.db"):
         """
         Initialize DataFetcher.
         Args:
@@ -32,14 +32,9 @@ class DataFetcher:
         self.processed_csv_path = processed_csv_path
         self.db_path = db_path
         self.db = TransactionDB(self.db_path)
-        
-        if force_db_reload:
-            print("Forcing database reload: Clearing existing transactions.")
-            self.db.clear_transactions() # Clear DB before loading
-        
         self.user_ids = self._load_all_user_ids_from_db()
         
-        # # Load CSV data into database
+        # Load CSV data into database
         # self._load_csv_to_db()
 
     def _load_csv_to_db(self):
@@ -100,9 +95,7 @@ class DataFetcher:
         return tag.lower().replace('_', ' ') if isinstance(tag, str) else "unknown"
 
     def monthly_profile(self, year: int, month: int, user_id: str) -> str:
-        """
-        Generate a concise text-based monthly profile for a user using data from the database.
-        """
+        """Generate a concise text-based monthly profile for a user using data from the database."""
         if user_id not in self.user_ids:
             return f"Error: User ID {user_id} not found in the database."
         if not (1 <= month <= 12):
@@ -202,8 +195,6 @@ class DataFetcher:
             if spend >= min_spend and cash_in >= min_cash_in:
                 filtered_users.append((user_id, count))
         
-        # Sort by transaction count (descending) and limit to max_users
-        filtered_users.sort(key=lambda x: x[1], reverse=True)
         chosen_users = filtered_users[:max_users]
         
         return [user_id for user_id, _ in chosen_users]

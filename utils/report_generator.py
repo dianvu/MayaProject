@@ -89,7 +89,7 @@ class ReportGenerator:
                      If None, will select the best approach for each component.
             
         Returns:
-            A structured report with metadata, components, and evaluation metrics
+            A structured report with metadata, components, evaluation metrics and best prompting approach
         """
         # If no approach specified, select best approach for each component
         if approach is None:
@@ -134,7 +134,8 @@ class ReportGenerator:
                 "month": self.month
             },
             "report_components": report_components,
-            "evaluation": component_metrics
+            "evaluations": component_metrics,
+            "best_approaches": approach
         }
 
     def save_report(self, report, output_folder="reports"):
