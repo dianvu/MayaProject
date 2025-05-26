@@ -1,6 +1,0 @@
-User 010affbc-cc8c-412e-afdd-0a912cff8125 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 14905.78 with 55 transactions
-- Spending methods include bank transfer with 39.38%, pay with maya with 3.59%, qr with 1.35%, send money with 55.68%
-- Total cash-in is 15270.10 with 41 transactions
-- Cash-in methods include bank transfer with 34.59%, send money with 65.41%
-- User tags: voyagers, prudent planners, hungry foodies

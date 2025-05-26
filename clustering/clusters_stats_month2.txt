@@ -1,0 +1,6 @@
+Clusters Cluster Statistics (Month 2):
+        spend_count cash_in_count total_spend total_cash_in
+               mean          mean        mean          mean
+cluster                                                    
+0             85.22         39.95    20685.14      20714.21
+1            610.95        750.60   773252.86     766067.30

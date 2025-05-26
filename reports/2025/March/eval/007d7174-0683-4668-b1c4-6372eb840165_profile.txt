@@ -1,6 +1,0 @@
-User 007d7174-0683-4668-b1c4-6372eb840165 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 7956.80 with 13 transactions
-- Spending methods include bank transfer with 0.53%, bills payment with 94.65%, maya shop with 0.22%, qr with 3.99%, top-up (fee) with 0.60%
-- Total cash-in is 6819.66 with 14 transactions
-- Cash-in methods include bank transfer with 1.51%, loan service with 54.15%, rewards with 0.85%, send money with 1.66%, top-up with 41.83%
-- User tags: health and self care, prudent planners, loan and gaming

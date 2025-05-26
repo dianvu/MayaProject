@@ -1,2 +1,0 @@
-user_id,timestamp,transaction_type,transaction_method,amount,segment_tag
-test-001,2025-04-01,SPEND,SEND MONEY,13.4046,"LUSHER DRINKER"

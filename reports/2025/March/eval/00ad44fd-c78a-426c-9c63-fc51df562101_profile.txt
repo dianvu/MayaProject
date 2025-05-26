@@ -1,6 +1,0 @@
-User 00ad44fd-c78a-426c-9c63-fc51df562101 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 65556.66 with 347 transactions
-- Spending methods include bank transfer with 50.34%, bills payment with 0.09%, online purchase with 1.84%, pay with maya with 1.77%, pos purchase with 0.42%, qr with 43.44%, send money with 2.10%
-- Total cash-in is 71743.58 with 310 transactions
-- Cash-in methods include bank transfer with 50.43%, mini apps with 49.43%, send money with 0.15%
-- User tags: hungry foodies, loan and gaming, life designers

@@ -1,6 +1,0 @@
-User 00a74ced-cfb6-4ac4-b8b9-3ad03f507444 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 10896.74 with 453 transactions
-- Spending methods include bank transfer with 0.64%, encashment with 0.77%, encashment (commission) with 0.03%, encashment (revenue) with 0.01%, maya shop with 0.10%, pay with maya with 7.84%, qr with 58.96%, send money with 31.65%
-- Total cash-in is 9143.56 with 177 transactions
-- Cash-in methods include bank transfer with 1.98%, invest with 0.06%, mini apps with 64.19%, send money with 33.77%
-- User tags: prudent planners, loan and gaming

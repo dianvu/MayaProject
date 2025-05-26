@@ -1,6 +1,0 @@
-User 00aaabae-49e5-407b-bcca-e66fa62b73f1 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 18769.46 with 7 transactions
-- Spending methods include bank transfer with 20.99%, online purchase with 77.92%, send money with 1.09%
-- Total cash-in is 16391.91 with 5 transactions
-- Cash-in methods include bank transfer with 100.00%
-- User tags: gifters, prudent planners, loan and gaming

@@ -1,6 +1,0 @@
-User 00f1afd2-e2e3-4d21-82b9-87aacf4e4320 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 4142.15 with 182 transactions
-- Spending methods include bank transfer with 5.87%, maya shop with 0.56%, qr with 15.19%, send money with 78.11%, top-up (fee) with 0.28%
-- Total cash-in is 5200.15 with 87 transactions
-- Cash-in methods include bank transfer with 11.36%, mini apps with 5.03%, rewards with 0.23%, send money with 79.66%, top-up with 3.71%
-- User tags: life designers, loan and gaming

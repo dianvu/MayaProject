@@ -1,6 +1,0 @@
-User 012177c0-5f86-4a8c-a90d-49f8f86893f1 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 29287.03 with 44 transactions
-- Spending methods include bank transfer with 93.54%, bills payment with 1.25%, maya shop with 0.42%, qr with 4.80%
-- Total cash-in is 15777.21 with 8 transactions
-- Cash-in methods include bank transfer with 54.05%, send money with 45.95%
-- User tags: fitness, digital savvy, trendsetters

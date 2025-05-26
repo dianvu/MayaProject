@@ -1,6 +1,0 @@
-User 00d6a40b-e1b7-4f23-90c6-cdc6e0b1f666 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 11992.55 with 15 transactions
-- Spending methods include maya shop with 0.92%, pay with maya with 16.03%, qr with 71.46%, send money with 11.59%
-- Total cash-in is 12232.50 with 13 transactions
-- Cash-in methods include bank pull with 52.70%, bank transfer with 40.52%, refund with 6.78%
-- User tags: voyagers

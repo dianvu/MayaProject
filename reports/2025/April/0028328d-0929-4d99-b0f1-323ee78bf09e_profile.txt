@@ -1,6 +1,0 @@
-User 0028328d-0929-4d99-b0f1-323ee78bf09e monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 54.69 with 1 transactions
-- Spending methods include qr with 100.00%
-- Total cash-in is 65.56 with 1 transactions
-- Cash-in methods include bank pull with 100.00%
-- User tags: patrons, hungry foodies, grocers

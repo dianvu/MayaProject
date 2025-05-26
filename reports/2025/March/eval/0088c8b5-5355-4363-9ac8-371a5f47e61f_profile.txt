@@ -1,6 +1,0 @@
-User 0088c8b5-5355-4363-9ac8-371a5f47e61f monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 1290.30 with 5 transactions
-- Spending methods include bank transfer with 82.64%, pay with maya with 9.32%, send money with 8.04%
-- Total cash-in is 848.48 with 5 transactions
-- Cash-in methods include bank transfer with 100.00%
-- User tags: health and self care, hungry foodies, trendsetters

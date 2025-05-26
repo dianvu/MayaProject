@@ -1,6 +1,0 @@
-User d962c87b-e29c-41f0-8f04-5f5e9df339ab monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 27149.26 with 73 transactions
-- Spending methods include bank transfer with 45.39%, maya shop with 0.01%, qr with 32.94%, send money with 21.66%
-- Total cash-in is 32465.87 with 28 transactions
-- Cash-in methods include bank transfer with 3.92%, mini apps with 16.61%, send money with 79.48%
-- User tags: professional hustlers, loan and gaming, prudent planners

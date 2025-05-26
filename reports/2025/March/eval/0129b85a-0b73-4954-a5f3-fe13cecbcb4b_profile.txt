@@ -1,6 +1,0 @@
-User 0129b85a-0b73-4954-a5f3-fe13cecbcb4b monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 507.44 with 7 transactions
-- Spending methods include bank transfer with 15.49%, qr with 3.13%, send money with 81.39%
-- Total cash-in is 725.96 with 100 transactions
-- Cash-in methods include bank transfer with 35.26%, send money with 64.74%
-- User tags: hungry foodies, loan and gaming

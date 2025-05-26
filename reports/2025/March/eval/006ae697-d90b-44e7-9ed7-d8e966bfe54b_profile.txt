@@ -1,6 +1,0 @@
-User 006ae697-d90b-44e7-9ed7-d8e966bfe54b monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 7610.32 with 125 transactions
-- Spending methods include bank transfer with 45.13%, qr with 47.62%, send money with 7.25%
-- Total cash-in is 8013.26 with 40 transactions
-- Cash-in methods include bank transfer with 39.62%, mini apps with 56.82%, send money with 3.55%
-- User tags: modern life enjoyers, loan and gaming, prudent planners

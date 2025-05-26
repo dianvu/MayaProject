@@ -1,6 +1,0 @@
-User 005264e7-bb6f-4bab-9b1a-656b1cc07f30 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 471774.10 with 622 transactions
-- Spending methods include pay with maya with -0.10%, qr with 5.72%, send money with 94.38%
-- Total cash-in is 427905.85 with 717 transactions
-- Cash-in methods include bank transfer with 25.78%, send money with 74.22%
-- User tags: trendy campaigners, loan and gaming, digital savvy

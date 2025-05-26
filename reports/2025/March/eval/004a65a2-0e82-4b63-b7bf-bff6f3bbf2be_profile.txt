@@ -1,6 +1,0 @@
-User 004a65a2-0e82-4b63-b7bf-bff6f3bbf2be monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 5764.27 with 85 transactions
-- Spending methods include maya shop with 0.29%, qr with 17.97%, send money with 81.74%
-- Total cash-in is 5670.91 with 51 transactions
-- Cash-in methods include bank transfer with 1.30%, send money with 98.70%
-- User tags: life designers

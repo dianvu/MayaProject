@@ -1,6 +1,0 @@
-User 007b2875-3900-4a28-8bea-9864afb2338f monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 757.03 with 13 transactions
-- Spending methods include bank transfer with 42.89%, qr with 14.61%, send money with 41.83%, top-up (fee) with 0.67%
-- Total cash-in is 1672.56 with 4 transactions
-- Cash-in methods include send money with 91.96%, top-up with 8.04%
-- User tags: lush drinkers

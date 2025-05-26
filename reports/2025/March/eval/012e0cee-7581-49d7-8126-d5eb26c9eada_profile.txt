@@ -1,6 +1,0 @@
-User 012e0cee-7581-49d7-8126-d5eb26c9eada monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 15133.81 with 55 transactions
-- Spending methods include bank transfer with 21.01%, bills payment with 36.46%, maya shop with 0.32%, pay with maya with 23.91%, pos purchase with 13.05%, qr with 4.24%, send money with 1.00%
-- Total cash-in is 14214.74 with 15 transactions
-- Cash-in methods include bank transfer with 100.00%
-- User tags: gifters, prudent planners, grocers

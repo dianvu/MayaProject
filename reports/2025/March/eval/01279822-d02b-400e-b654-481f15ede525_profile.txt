@@ -1,6 +1,0 @@
-User 01279822-d02b-400e-b654-481f15ede525 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 2479.81 with 12 transactions
-- Spending methods include bank transfer with 82.07%, qr with 17.93%
-- Total cash-in is 6211.44 with 12 transactions
-- Cash-in methods include bank pull with 2.05%, bank transfer with 97.95%
-- User tags: lush drinkers, digital savvy

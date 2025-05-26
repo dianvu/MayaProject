@@ -1,6 +1,0 @@
-User 00a9353c-ca47-4532-ba09-614fb6343d85 monthly transactions Summary (Timestamp: 2025-03)
-- Total spend is 6261.42 with 15 transactions
-- Spending methods include atm transaction with 8.52%, bank transfer with 32.78%, online purchase with 6.20%, pay with maya with 23.76%, pos purchase with 3.52%, qr with 1.20%, send money with 24.02%
-- Total cash-in is 6896.16 with 13 transactions
-- Cash-in methods include bank transfer with 100.00%
-- User tags: trendsetters, health and self care, hungry foodies
