@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "010affbc-cc8c-412e-afdd-0a912cff8125",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 010affbc Monthly Activity (March 2025)\n\nThe user conducted 96 total transactions in March 2025, with cash-in exceeding spending by approximately 364.32 PHP. Their transaction profile shows:\n\n## Financial Activity:\n- Spending: 14,905.78 PHP (55 transactions)\n- Cash-in: 15,270.10 PHP (41 transactions)\n- Net Position: +364.32 PHP\n\n## Transaction Methods:\n- Spending primarily through send money (55.68%) and bank transfers (39.38%)\n- Cash-in predominantly via send money (65.41%) and bank transfers (34.59%)\n\n## User Profile:\nThe user is categorized as a \"voyager,\" \"prudent planner,\" and \"hungry foodie,\" suggesting someone who values financial stability while enjoying food experiences and possibly travel.",
+        "recommendations": "# Financial Recommendations for You\n\nBased on your March 2025 transaction data, here are personalized recommendations to enhance your financial health:\n\n## 1. Optimize Your Transfer Methods\nYou're using \"send money\" for 55.68% of your spending. Consider using QR payments (currently only 1.35%) for more transactions to potentially reduce transfer fees and earn rewards points. Many merchants offer discounts for QR payments, which could save you approximately 2-3% on regular purchases.\n\n## 2. Build Your Emergency Fund\nYour current savings rate is minimal (only about 2.4% of income). As a \"prudent planner,\" aim to gradually increase this to 10-15%. Try the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings. Start by automatically transferring 5% of each cash-in to a separate savings account.\n\n## 3. Track Food Expenses\nYour \"hungry foodie\" tag suggests you enjoy dining experiences. Create a dedicated monthly food budget that balances enjoyment with financial goals. Consider using a meal planning app to reduce impulse food spending while still enjoying quality dining experiences.\n\n## 4. Diversify Cash-In Sources\nYour cash-in relies heavily on two methods. As a \"voyager,\" explore additional income streams that align with your interests, such as freelance opportunities or passive income sources. Even a small side project generating 10% additional income could significantly improve your financial flexibility.\n\n## 5. Implement Weekly Financial Reviews\nTake 15 minutes each week to review your transactions. This simple habit will help you identify unnecessary expenses and keep your financial goals on track, supporting your \"prudent planner\" approach to finances."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.66
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.98,
+            "similarity_score": 0.55
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

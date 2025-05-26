@@ -1,0 +1,6 @@
+User 00abb796-c770-41ca-a1f1-33a498a951f4 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 661.07 with 2 transactions
+- Spending methods include bank transfer with 96.98%, pay with maya with 3.02%
+- Total cash-in is 1138.35 with 5 transactions
+- Cash-in methods include send money with 100.00%
+- User tags: cafe aficionados, prudent planners, hungry foodies

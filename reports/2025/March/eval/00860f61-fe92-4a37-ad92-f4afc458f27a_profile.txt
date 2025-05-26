@@ -1,0 +1,6 @@
+User 00860f61-fe92-4a37-ad92-f4afc458f27a monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 37945.41 with 56 transactions
+- Spending methods include atm transaction with 36.70%, bank transfer with 25.76%, bills payment with 4.64%, card catalogue with 0.15%, online purchase with 1.24%, pay with maya with 2.65%, pos purchase with 28.87%
+- Total cash-in is 42199.56 with 33 transactions
+- Cash-in methods include bank transfer with 93.55%, loan service with 3.93%, refund with 0.25%, send money with 2.28%
+- User tags: gifters, prudent planners, grocers

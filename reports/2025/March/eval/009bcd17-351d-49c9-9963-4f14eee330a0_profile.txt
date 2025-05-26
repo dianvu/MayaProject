@@ -1,0 +1,6 @@
+User 009bcd17-351d-49c9-9963-4f14eee330a0 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 451167.28 with 1119 transactions
+- Spending methods include atm transaction with 3.02%, bank transfer with 43.28%, maya shop with 0.01%, online purchase with 0.08%, qr with 53.61%
+- Total cash-in is 450323.52 with 476 transactions
+- Cash-in methods include bank transfer with 47.71%, mini apps with 49.65%, remittance with 2.65%
+- User tags: trendy campaigners, prudent planners, loan and gaming

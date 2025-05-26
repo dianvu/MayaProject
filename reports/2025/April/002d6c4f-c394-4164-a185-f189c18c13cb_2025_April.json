@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "002d6c4f-c394-4164-a185-f189c18c13cb",
+        "year": 2025,
+        "month": "April"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 002d6c4f Monthly Activity (April 2025)\n\nThe user spent $694.89 across 32 transactions, primarily using send money (56.35%) and QR payments (43.65%). Their cash-in totaled $788.01 through 15 transactions, predominantly via mini apps (60.06%) and send money (39.94%). With a spend-to-cash-in ratio of 88.2%, the user maintained a modest positive balance.\n\nUser behavior aligns with their profile tags (professional hustlers, prudent planners, loan and gaming), demonstrating a balance between active financial management and diverse spending interests.",
+        "recommendations": "# Financial Recommendations\n\nBased on your April 2025 transaction data, here are personalized recommendations to enhance your financial health:\n\n1. **Build Your Emergency Fund**: You're saving approximately 12% of your income (93.12 difference between cash-in and spending), which is a good start. Consider automating a transfer of 15-20% of your income to a dedicated emergency savings account to reach 3-6 months of essential expenses.\n\n2. **Diversify Your Income Streams**: While mini-apps provide 60% of your cash-in, explore additional income opportunities that align with your \"professional hustler\" profile. Consider freelance work or passive income sources to reduce reliance on a single income channel.\n\n3. **Review Gaming and Loan Activities**: Your \"loan and gaming\" tag suggests potential financial risks. Set a strict monthly budget for gaming expenses (no more than 5% of your income) and prioritize paying off any outstanding loans before taking on new debt.\n\n4. **Track Spending Categories**: Your transaction summary lacks spending category details. Use a budgeting app to categorize your 32 monthly transactions, identifying potential areas to reduce discretionary spending and align with your \"prudent planner\" profile.\n\n5. **Optimize QR Payment Rewards**: Since 43.65% of your spending is via QR payments, research and switch to payment methods offering the best cashback or rewards for your specific spending patterns to maximize returns on everyday purchases."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.63
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.57
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

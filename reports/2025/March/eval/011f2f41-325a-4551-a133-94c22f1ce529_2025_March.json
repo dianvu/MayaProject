@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "011f2f41-325a-4551-a133-94c22f1ce529",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 011f2f41 (March 2025)\n\n## Financial Overview\n- **Net Position**: Cash-in exceeds spending by approximately 1,000 pesos\n- **Total Spend**: \u20b13,855.64 across 10 transactions\n- **Total Cash-in**: \u20b12,861.75 across 13 transactions\n\n## Transaction Patterns\n- **Primary Spending**: Bills payment (76% of spend), followed by send money (16%)\n- **Primary Cash-in**: Bank transfers (59% of cash-in), with significant loan service activity (27%)\n\n## User Profile\nThis user demonstrates characteristics of a \"prudent planner\" who primarily uses the platform for bill payments while supplementing income through loans. Their digital savvy is evident in the diverse transaction methods utilized. The user maintains a structured financial approach despite spending exceeding cash-in during this period.",
+        "recommendations": "# Financial Recommendations\n\nBased on your March 2025 transaction summary, here are personalized recommendations to improve your financial health:\n\n## 1. Address Negative Cash Flow\nYou're spending $993.89 more than you're bringing in each month. Consider creating a detailed budget to identify non-essential expenses that can be reduced, particularly in your bills payment category (76% of spending).\n\n## 2. Build an Emergency Fund\nAs a \"prudent planner,\" allocate at least 10% of your monthly cash-in ($286) toward an emergency fund until you have 3-6 months of expenses saved. This will reduce your reliance on loans, which currently make up 27% of your income.\n\n## 3. Evaluate Loan Obligations\nWith loans comprising over a quarter of your income, review your debt terms and explore refinancing options for better rates. Consider using the debt avalanche method (paying highest interest debts first) to systematically reduce your loan burden.\n\n## 4. Optimize Digital Transactions\nAs a \"digital savvy\" user, explore fee-free digital payment options to minimize transaction costs. Look for cashback or rewards programs that align with your spending patterns to maximize the value of necessary expenses.\n\n## 5. Track Gaming Expenses\nYour \"gaming\" tag suggests this may be a significant interest. Set a specific monthly entertainment budget for gaming to ensure this hobby remains financially sustainable while you work to balance your cash flow."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.61
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.57
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

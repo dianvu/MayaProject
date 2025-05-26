@@ -1,0 +1,6 @@
+User 005a59da-0e0e-4e2e-b524-47ac118c65db monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 3920.05 with 22 transactions
+- Spending methods include bank transfer with 17.75%, pay with maya with 47.83%, qr with 30.18%, send money with 4.24%
+- Total cash-in is 5096.20 with 16 transactions
+- Cash-in methods include bank transfer with 100.00%
+- User tags: cafe aficionados, gourmet

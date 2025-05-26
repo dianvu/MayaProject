@@ -1,0 +1,6 @@
+User 00bff9b8-5825-4602-96e8-a28fb1b02427 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 27059.67 with 220 transactions
+- Spending methods include bank transfer with 18.34%, bills payment with 10.29%, pay with maya with 0.88%, qr with 43.99%, send money with 26.51%
+- Total cash-in is 25860.10 with 83 transactions
+- Cash-in methods include bank transfer with 44.27%, loan service with 7.97%, mini apps with 44.32%, send money with 3.43%
+- User tags: lush drinkers, loan and gaming

@@ -26,16 +26,23 @@ class DataFetcher:
         Initialize DataFetcher.
         Args:
             processed_csv_path: Path to the processed CSV file.
-            db_name: Directory to the SQLite database file.
-            force_db_reload: If True, clears existing transactions and reloads from CSV.
+            db_path: Path to the SQLite database file.
         """
         self.processed_csv_path = processed_csv_path
         self.db_path = db_path
-        self.db = TransactionDB(self.db_path)
-        self.user_ids = self._load_all_user_ids_from_db()
         
-        # Load CSV data into database
-        # self._load_csv_to_db()
+        # Check if database exists
+        db_exists = os.path.exists(self.db_path)
+        
+        # Initialize database connection
+        self.db = TransactionDB(self.db_path)
+        
+        # If database doesn't exist, load data from CSV
+        if not db_exists:
+            print(f"Database {self.db_path} not found. Loading data from CSV...")
+            self._load_csv_to_db()
+        
+        self.user_ids = self._load_all_user_ids_from_db()
 
     def _load_csv_to_db(self):
         """Loads data from the processed CSV file into the database."""
@@ -102,7 +109,7 @@ class DataFetcher:
              return "Error: Invalid month, must be from 1 to 12."
 
         profile_data = self.db.get_monthly_profile(user_id, year, month)
-        raw_transactions = self.db.get_monthly_transactions(user_id, year, month)
+        # raw_transactions = self.db.get_monthly_transactions(user_id, year, month)
 
         if profile_data['spend_count'] == 0 and profile_data['cash_in_count'] == 0:
             return f"User {user_id} ({year}-{month:02d})\nNo transaction data found for this period."
@@ -166,20 +173,7 @@ class DataFetcher:
 
     def active_users(self, year: int, month: int, min_transactions: int = 3,
                     max_users: int = 1000, min_spend: float = 0, min_cash_in: float = 0) -> List[str]:
-        """
-        Get a list of active users for a specific month based on multiple criteria.
-        
-        Args:
-            year: The year to filter transactions
-            month: The month to filter transactions (1-12)
-            min_transactions: Minimum number of transactions required to be considered active
-            max_users: Maximum number of users to return
-            min_spend: Minimum total spend amount required
-            min_cash_in: Minimum total cash-in amount required
-            
-        Returns:
-            List of user IDs that meet the criteria
-        """
+        """Get a list of active users for a specific month based on multiple criteria."""
         if not (1 <= month <= 12):
             raise ValueError("Month must be between 1 and 12.")
             

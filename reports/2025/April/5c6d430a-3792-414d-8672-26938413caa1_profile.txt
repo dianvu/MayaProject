@@ -1,0 +1,6 @@
+User 5c6d430a-3792-414d-8672-26938413caa1 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 3203.31 with 26 transactions
+- Spending methods include atm transaction with 8.67%, bank transfer with 70.01%, pos purchase with 20.43%, qr with 0.89%
+- Total cash-in is 3149.99 with 12 transactions
+- Cash-in methods include bank transfer with 95.43%, mini apps with 1.59%, send money with 2.99%
+- User tags: grocers, hungry foodies, modern life enjoyers

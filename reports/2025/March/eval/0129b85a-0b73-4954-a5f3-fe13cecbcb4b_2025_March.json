@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "0129b85a-0b73-4954-a5f3-fe13cecbcb4b",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 0129b85a Monthly Activity (March 2025)\n\nThe user spent \u20b1507.44 across 7 transactions, primarily using send money (81.39%), with smaller portions via bank transfer (15.49%) and QR payments (3.13%). Cash-in activity was significantly higher at \u20b1725.96 spread across 100 transactions, sourced from bank transfers (35.26%) and send money (64.74%).\n\nThe user's spending represents approximately 70% of their cash-in amount, suggesting moderate savings behavior. Their activity tags (hungry foodies, loan and gaming) indicate diverse interests and potential spending motivations.",
+        "recommendations": "# Financial Recommendations\n\nBased on your March 2025 transaction summary, here are personalized recommendations to improve your financial health:\n\n1. **Increase Your Emergency Fund**: You're currently saving about 30% of your income ($218.52), which is excellent. Consider allocating at least half of these savings to an emergency fund until you have 3-6 months of expenses covered.\n\n2. **Diversify Payment Methods**: 81.39% of your spending is through \"send money\" transfers. Consider using more secure payment methods for larger purchases to improve transaction security and tracking.\n\n3. **Budget for Gaming and Food**: Your tags indicate interests in gaming and food. Create specific monthly budget categories for these passions to ensure they remain enjoyable without impacting your financial goals.\n\n4. **Explore Loan Refinancing**: With the \"loan\" tag in your profile, review your current loan terms to see if refinancing could reduce interest payments and accelerate debt payoff.\n\n5. **Automate Regular Savings**: Set up automatic transfers of 15-20% of your cash-ins to a dedicated savings account to maintain your positive saving habits and build wealth consistently."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.62
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.55
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

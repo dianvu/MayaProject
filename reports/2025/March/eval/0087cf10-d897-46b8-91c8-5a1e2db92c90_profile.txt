@@ -1,0 +1,6 @@
+User 0087cf10-d897-46b8-91c8-5a1e2db92c90 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 2299.30 with 179 transactions
+- Spending methods include qr with 22.47%, send money with 77.53%
+- Total cash-in is 2332.70 with 49 transactions
+- Cash-in methods include mini apps with 11.81%, send money with 88.19%
+- User tags: life designers

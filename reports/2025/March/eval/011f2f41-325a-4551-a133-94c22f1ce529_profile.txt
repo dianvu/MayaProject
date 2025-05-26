@@ -1,0 +1,6 @@
+User 011f2f41-325a-4551-a133-94c22f1ce529 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 3855.64 with 10 transactions
+- Spending methods include atm transaction with 7.68%, bank transfer with 0.04%, bills payment with 75.99%, send money with 16.24%, top-up (fee) with 0.04%
+- Total cash-in is 2861.75 with 13 transactions
+- Cash-in methods include bank pull with 0.05%, bank transfer with 58.56%, loan service with 27.08%, rewards with 0.08%, send money with 9.79%, top-up with 4.44%
+- User tags: prudent planners, loan and gaming, digital savvy

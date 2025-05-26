@@ -1,0 +1,6 @@
+User 00cb279b-7709-4ff4-89f7-8fa6439d252a monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 6823.89 with 35 transactions
+- Spending methods include online purchase with 25.61%, pay with maya with 38.85%, qr with 35.55%
+- Total cash-in is 11737.53 with 7 transactions
+- Cash-in methods include bank transfer with 99.86%, send money with 0.14%
+- User tags: trendsetters, cafe aficionados, gifters

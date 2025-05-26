@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "005a5a83-5940-4803-a2f9-15159d4a90c3",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 005a5a83 (March 2025)\n\nThis user demonstrates high transaction volume with 315 spending transactions totaling \u20b169,091.23 and 105 cash-in transactions totaling \u20b166,238.52. Their spending slightly exceeds cash-in by approximately \u20b12,852.71.\n\n**Transaction Profile:**\n- Primary spending method is send money (57.97%), followed by bank transfers (31.42%)\n- Cash-in primarily comes from bank transfers (59.70%) and send money (33.81%)\n- User tags indicate a digitally savvy professional who engages with loan services and gaming platforms\n\nThe high transaction volume and nearly balanced cash-in/spend ratio suggest this user actively manages their digital finances, using Maya as a primary financial tool rather than just a supplementary service.",
+        "recommendations": "# Financial Recommendations for User 005a5a83-5940-4803-a2f9-15159d4a90c3\n\n## Current Financial Situation\nYou're currently spending more than you're bringing in, with a monthly deficit of approximately \u20b12,852.71. Your high transaction volume (315 spending transactions) suggests frequent, potentially impulsive spending, and \"send money\" represents your largest spending category at nearly 58%.\n\n## Personalized Recommendations\n\n1. **Create a Spending Tracker for Send Money Transactions**: Since almost 58% of your spending is through \"send money\" transfers, start categorizing these transactions in a simple spreadsheet or budgeting app. For the next 30 days, record the purpose of each transfer to identify which ones are essential versus discretionary spending.\n\n2. **Establish an Emergency Fund**: Your \"professional hustler\" and \"loan and gaming\" tags suggest income volatility and potential reliance on loans. Aim to redirect 10% of your monthly cash-in (approximately \u20b16,600) toward building a 3-month emergency fund to reduce dependence on loans, which currently make up 5.3% of your cash-in.\n\n3. **Consolidate Transaction Methods**: You're using multiple payment methods which can make tracking difficult. Consider consolidating to 2-3 primary payment methods and set up automatic categorization in a budgeting app that leverages your \"digital savvy\" skills.\n\n4. **Implement a 48-Hour Purchase Pause**: For non-essential purchases over \u20b11,000, institute a 48-hour waiting period before completing the transaction. This simple rule can help reduce impulse spending while maintaining your flexibility as a \"professional hustler.\"\n\n5. **Schedule Monthly Financial Review**: As someone who's \"digital savvy,\" set a recurring calendar appointment to review your Maya transaction history on the 1st of each month. Compare your spending to income and adjust your budget accordingly to gradually eliminate your monthly deficit."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.68
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.98,
+            "similarity_score": 0.57
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

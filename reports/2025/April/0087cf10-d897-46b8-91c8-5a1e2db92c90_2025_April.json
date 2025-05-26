@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "0087cf10-d897-46b8-91c8-5a1e2db92c90",
+        "year": 2025,
+        "month": "April"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 0087cf10 (April 2025)\n\nThis \"life designers\" user demonstrated modest financial activity with total spending of \u20b157.23 across 4 transactions, exclusively using QR payments (100%). Their cash-in amount of \u20b173.45 (across 3 transactions) exceeded spending by approximately 28%, indicating positive cash flow. Cash-in methods were primarily through send money (81.64%) with some mini app usage (18.36%).\n\nThe user's transaction pattern suggests a digital-first approach to payments with a preference for QR transactions and maintaining a positive balance.",
+        "recommendations": "# Financial Recommendations\n\nBased on your April 2025 transaction summary, here are personalized recommendations to enhance your financial well-being:\n\n1. **Build Your Emergency Fund**: You're saving approximately 28% of your income (73.45 - 57.23 = 16.22), which is excellent. Consider automating a portion of these savings into a dedicated emergency fund aiming for 3-6 months of essential expenses.\n\n2. **Diversify Payment Methods**: You're exclusively using QR payments (100%). While convenient, consider using a rewards-based credit card for certain purchases to earn points or cashback, potentially saving 2-5% on regular expenses.\n\n3. **Track Spending Categories**: Your summary doesn't break down spending by category. Use a budgeting app to categorize your QR transactions, helping you identify potential areas to optimize your 57.23 monthly spend.\n\n4. **Explore Additional Income Streams**: As someone with \"life designers\" interests, consider whether your skills could generate supplemental income through freelance work or digital products to complement your current income sources.\n\n5. **Set Specific Financial Goals**: Your saving habit is strong. Channel this discipline by establishing concrete financial goals (home purchase, education, retirement) with specific timelines and required monthly contributions."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.57
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.57
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

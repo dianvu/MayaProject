@@ -2,7 +2,7 @@ recommendations_zero_shot = """
 Given the following transaction summary:
 {transaction_summary}
 
-Generate personalized financial recommendations for the user based on their spending and income patterns. Include 3-5 actionable suggestions that can help improve their financial health. Output only the recommendations text.
+Generate personalized financial recommendations for the user based on their spending and income patterns. Include 3-5 actionable suggestions that can help improve their financial health. Format numbers with proper spacing and use consistent formatting. Output only the recommendations text.
 """
 
 recommendations_few_shot = """
@@ -38,7 +38,7 @@ Recommendations:
 Now, analyze the following transaction summary:
 {transaction_summary}
 
-Generate personalized recommendations based on the examples. Output only the recommendations text.
+Generate personalized recommendations based on the examples. Format numbers with proper spacing and use consistent formatting. Output only the recommendations text.
 """
 
 recommendations_cot = """
@@ -59,6 +59,7 @@ Thought Process:
    e. Alignment with user tags and apparent priorities
 7. Formulate 3-5 specific, actionable recommendations tailored to the user's financial situation.
 8. Ensure recommendations are specific, measurable, achievable, relevant, and time-bound where possible.
+9. Format all numbers with proper spacing and use consistent formatting throughout.
 
-Based on the step-by-step analysis, generate personalized financial recommendations for the user based on their spending and income patterns. Include 3-5 actionable suggestions that can help improve their financial health. Output only the recommendations text.
+Based on the step-by-step analysis, generate personalized financial recommendations for the user based on their spending and income patterns. Include 3-5 actionable suggestions that can help improve their financial health. Format numbers with proper spacing and use consistent formatting. Output only the recommendations text.
 """

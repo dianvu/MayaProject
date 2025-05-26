@@ -1,0 +1,6 @@
+User 00a2a97f-83f8-4a9d-a34c-5ba6bf8aa8d6 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 29862.38 with 196 transactions
+- Spending methods include bank transfer with 43.13%, bills payment with 32.00%, maya shop with 0.49%, pay with maya with -3.25%, qr with 27.61%, top-up (fee) with 0.03%
+- Total cash-in is 26809.85 with 28 transactions
+- Cash-in methods include bank transfer with 72.81%, loan service with 4.38%, mini apps with 18.25%, send money with 1.75%, top-up with 2.81%
+- User tags: hobbyist, prudent planners

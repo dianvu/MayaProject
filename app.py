@@ -45,7 +45,7 @@ def main():
     
     # Initialize components
     llm = anthropic_llm()
-    data_fetcher = DataFetcher("data/transactions.csv", "data/transactions.db")
+    data_fetcher = DataFetcher("data/test.csv", "data/test.db")
     
     # Generate report button
     if st.sidebar.button("Generate Report"):
@@ -53,6 +53,7 @@ def main():
             try:
                 # Fetch transaction data
                 transaction_summary = data_fetcher.monthly_profile(year, month, user_id)
+                print(transaction_summary)
                 
                 # Initialize report generator
                 report_generator = ReportGenerator(llm, user_id, year, month)

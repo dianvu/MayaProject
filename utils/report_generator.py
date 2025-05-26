@@ -24,8 +24,8 @@ class ReportGenerator:
         """Load all prompt templates for different components and approaches."""
         return {
             "executive_summary": {
-                "zero_shot": PromptTemplate(input_variables=["transaction_summary"], template=executive_summary_zero_shot),
-                "few_shot": PromptTemplate(input_variables=["transaction_summary"], template=executive_summary_few_shot),
+                # "zero_shot": PromptTemplate(input_variables=["transaction_summary"], template=executive_summary_zero_shot),
+                # "few_shot": PromptTemplate(input_variables=["transaction_summary"], template=executive_summary_few_shot),
                 "chain_of_thought": PromptTemplate(input_variables=["transaction_summary"], template=executive_summary_cot)
             },
             # "cash_flow": {
@@ -44,8 +44,8 @@ class ReportGenerator:
             #     "chain_of_thought": PromptTemplate(input_variables=["transaction_summary"], template=savings_position_cot)
             # },
             "recommendations": {
-                "zero_shot": PromptTemplate(input_variables=["transaction_summary"], template=recommendations_zero_shot),
-                "few_shot": PromptTemplate(input_variables=["transaction_summary"], template=recommendations_few_shot),
+                # "zero_shot": PromptTemplate(input_variables=["transaction_summary"], template=recommendations_zero_shot),
+                # "few_shot": PromptTemplate(input_variables=["transaction_summary"], template=recommendations_few_shot),
                 "chain_of_thought": PromptTemplate(input_variables=["transaction_summary"], template=recommendations_cot)
             }
         }

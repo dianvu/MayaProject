@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "00d6a40b-e1b7-4f23-90c6-cdc6e0b1f666",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 00d6a40b Monthly Transaction Analysis (March 2025)\n\n## Transaction Overview\n- **Total Spend**: \u20b111,992.55 across 15 transactions\n- **Total Cash-in**: \u20b112,232.50 across 13 transactions\n- **Net Position**: Positive cash flow of \u20b1239.95\n\n## Spending Behavior\n- Primary spending method: QR payments (71.46%)\n- Secondary methods: Pay with Maya (16.03%) and Send Money (11.59%)\n- Minimal usage of Maya Shop (0.92%)\n\n## Cash-in Patterns\n- Primary funding source: Bank Pull (52.70%)\n- Secondary source: Bank Transfer (40.52%)\n- Small portion from Refunds (6.78%)\n\n## User Classification\n- Tagged as \"Voyagers\" segment\n- Demonstrates balanced financial management with slightly positive cash flow\n- Heavy preference for QR-based transactions suggests regular in-store purchasing",
+        "recommendations": "# Financial Recommendations for Your March 2025 Activity\n\nBased on your transaction summary, here are personalized recommendations to optimize your financial health:\n\n## 1. Create a Dedicated Travel Fund\nAs a \"voyager,\" consider setting up an automatic monthly transfer of 10-15% of your cash-ins to a dedicated travel savings account. With your current positive cash flow of \u20b1239.95, you could accumulate over \u20b12,800 annually for travel experiences without affecting your regular expenses.\n\n## 2. Diversify Your Payment Methods\n71.46% of your transactions are via QR payments. While convenient, consider distributing your spending across different payment methods to maximize rewards. Maya Shop (currently only 0.92% of transactions) often offers higher cashback rates than standard QR payments.\n\n## 3. Optimize Cash-In Strategy\nYour multiple cash-in transactions (13 per month) may incur unnecessary fees. Consider consolidating to 3-4 larger cash-ins per month, preferably using bank transfers which typically have lower fees than bank pulls, potentially saving you \u20b1100-150 monthly.\n\n## 4. Track Spending Categories\nYour transaction summary lacks spending category details. Use Maya's tagging feature to categorize expenses, helping you identify areas where you might reduce spending to increase your travel budget.\n\n## 5. Build an Emergency Fund\nWhile you're maintaining a positive cash flow, aim to establish an emergency fund of 3-6 months of expenses (approximately \u20b136,000-\u20b172,000) to ensure financial security alongside your travel aspirations."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.72
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.52
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

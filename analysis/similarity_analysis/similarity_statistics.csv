@@ -1,0 +1,17 @@
+Tag,Component,mean,std,min,max
+"both ""recreation"" and ""prudent planners",executive_summary,0.61,,0.61,0.61
+"both ""recreation"" and ""prudent planners",recommendations,0.53,,0.53,0.53
+digitally savvy,executive_summary,0.65,,0.65,0.65
+digitally savvy,recommendations,0.6,,0.6,0.6
+fitness-oriented,executive_summary,0.65,,0.65,0.65
+fitness-oriented,recommendations,0.6,,0.6,0.6
+grocers,executive_summary,0.68,,0.68,0.68
+grocers,recommendations,0.57,,0.57,0.57
+lush drinkers,executive_summary,0.61,,0.61,0.61
+lush drinkers,recommendations,0.58,,0.58,0.58
+"lush drinkers"" and ""loan and gaming",executive_summary,0.68,,0.68,0.68
+"lush drinkers"" and ""loan and gaming",recommendations,0.55,,0.55,0.55
+prudent planners,executive_summary,0.68,,0.68,0.68
+prudent planners,recommendations,0.57,,0.57,0.57
+which is supported by the 8,executive_summary,0.68,,0.68,0.68
+which is supported by the 8,recommendations,0.55,,0.55,0.55

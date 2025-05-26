@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "00f09ef8-bcbb-4ea0-bc8e-0aecaf374edb",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 00f09ef8 (March 2025)\n\nThe user spent $270.72 across 9 transactions, primarily using QR payments (94.53%) with minimal Maya Shop usage (5.47%). Their cash-in activity totaled $302.66 through 3 transactions, exclusively via mini apps (100%). The user maintains a positive balance with cash-in exceeding spending by $31.94. Tagged as both \"recreation\" and \"prudent planners,\" they appear to balance leisure activities with responsible financial management.",
+        "recommendations": "# Financial Recommendations\n\nBased on your March 2025 transaction summary, here are personalized recommendations to enhance your financial health:\n\n1. **Increase Your Emergency Fund**: You're saving about 10.5% of your income (\u20b131.94 surplus), which aligns with your \"prudent planner\" profile. Consider automating an additional 5% transfer to a high-yield savings account to build a stronger safety net.\n\n2. **Diversify Payment Methods**: 94.53% of your transactions use QR payments. While convenient, consider using credit cards with cashback for certain purchases to earn rewards on your regular spending.\n\n3. **Track Recreation Spending**: As someone with a \"recreation\" tag, ensure your leisure activities align with your financial goals. Set a specific monthly recreation budget (perhaps 15% of your income) to enjoy activities while maintaining financial discipline.\n\n4. **Explore Additional Income Streams**: Your cash-in comes exclusively from mini apps. Consider diversifying your income sources through freelance opportunities related to your skills or passive income investments to increase financial stability.\n\n5. **Implement a 50/30/20 Budget**: Allocate 50% of income to necessities, 30% to wants, and 20% to savings/debt repayment to provide structure while accommodating your recreational interests."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.61
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.53
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

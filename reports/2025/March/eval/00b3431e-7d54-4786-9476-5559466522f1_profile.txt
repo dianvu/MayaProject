@@ -1,0 +1,6 @@
+User 00b3431e-7d54-4786-9476-5559466522f1 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 1694.85 with 22 transactions
+- Spending methods include send money with 98.93%, top-up (fee) with 1.07%
+- Total cash-in is 1554.48 with 21 transactions
+- Cash-in methods include send money with 36.77%, top-up with 63.23%
+- User tags: health and self care

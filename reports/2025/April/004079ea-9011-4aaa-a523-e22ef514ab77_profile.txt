@@ -1,0 +1,6 @@
+User 004079ea-9011-4aaa-a523-e22ef514ab77 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 159198.00 with 338 transactions
+- Spending methods include bank transfer with 8.05%, bills payment with 32.64%, pay with maya with 0.02%, qr with 59.30%
+- Total cash-in is 130485.73 with 131 transactions
+- Cash-in methods include bank transfer with 48.40%, loan service with 5.40%, mini apps with 46.20%
+- User tags: patrons, loan and gaming, prudent planners

@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "00330840-b1dd-4c54-a5f0-ea4f500a765f",
+        "year": 2025,
+        "month": "April"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 00330840-b1dd-4c54-a5f0-ea4f500a765f (April 2025)\n\nThis user demonstrates moderate spending activity with 14 transactions totaling \u20b1264.36 for the month. Their spending is primarily through Maya Shop (62.32%) and Send Money (37.68%), indicating a preference for digital payments and peer transfers. \n\nNo cash-in transactions were recorded during this period, suggesting the user may be depleting existing balance or receiving funds through other means not captured in this summary.\n\nThe user is tagged as a \"prudent planner\" and \"digital savvy,\" which aligns with their controlled spending pattern and preference for digital payment methods. The \"loan and gaming\" tag may indicate interest in these activities, though no specific transactions in these categories were highlighted in the summary.",
+        "recommendations": "# Financial Recommendations\n\nBased on your April 2025 transaction summary, here are personalized recommendations to improve your financial health:\n\n1. **Establish a Regular Cash-In Strategy**: You had no recorded cash-ins this month despite spending \u20b1264.36. Set up automatic transfers to your Maya account that align with your income schedule to ensure you're not depleting external accounts.\n\n2. **Create a Budget Tracking System**: As a \"prudent planner,\" implement a simple budget system that categorizes your Maya Shop purchases (62.32% of spending) to identify potential areas to reduce discretionary spending.\n\n3. **Build an Emergency Fund**: Aim to save at least 3-6 months of expenses. Start by setting aside 10% of your monthly income in a separate savings pocket within Maya to avoid using other credit sources.\n\n4. **Review Send Money Transactions**: Your send money transfers (37.68% of spending) represent a significant portion of outflows. Evaluate these recurring transfers to determine if they're essential or could be optimized.\n\n5. **Consider Digital Savings Tools**: As someone who is \"digital savvy,\" explore Maya's automated savings features or round-up tools that can help you build savings without changing your spending habits dramatically."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.62
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.51
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}

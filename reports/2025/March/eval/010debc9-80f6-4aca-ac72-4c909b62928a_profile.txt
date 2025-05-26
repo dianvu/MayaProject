@@ -1,0 +1,6 @@
+User 010debc9-80f6-4aca-ac72-4c909b62928a monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 5273.06 with 12 transactions
+- Spending methods include bank transfer with 77.59%, bills payment with 22.32%, send money with 0.09%
+- Total cash-in is 6503.33 with 11 transactions
+- Cash-in methods include bank pull with 13.96%, bank transfer with 16.93%, loan service with 68.35%, send money with 0.76%
+- User tags: gourmet

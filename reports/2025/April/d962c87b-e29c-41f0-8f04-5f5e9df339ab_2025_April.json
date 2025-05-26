@@ -5,22 +5,22 @@
         "month": "April"
     },
     "report_components": {
-        "executive_summary": "# Executive Summary: User d962c87b (April 2025)\n\nThe user spent $3,402.12 across 40 transactions, primarily through send money (64.40%) and QR payments (33.99%), with minimal Maya shop usage (1.61%). Cash-in totaled $4,827.71 via 20 transactions, predominantly through bank transfers (90.42%) with some send money receipts (9.58%).\n\nThe user maintains a positive financial balance, with cash-in exceeding spending by approximately $1,425. Their transaction pattern combines characteristics of \"professional hustlers,\" \"loan and gaming,\" and \"prudent planners,\" suggesting a financially active user who manages diverse payment methods while maintaining net positive cash flow.",
-        "recommendations": "# Financial Recommendations\n\nBased on your April 2025 transaction data, here are personalized recommendations to enhance your financial health:\n\n1. **Increase Your Emergency Fund**: You're saving approximately 30% of your income (\u20b11,425 monthly), which is excellent. Consider allocating 50% of these savings to an emergency fund until you reach 3-6 months of expenses (\u20b110,200-\u20b120,400).\n\n2. **Diversify Payment Methods**: 64.4% of your spending is through send money transfers. Consider using QR payments more frequently for better expense tracking and potential rewards/cashback opportunities.\n\n3. **Budget Allocation Review**: With 40 transactions totaling \u20b13,402 monthly, your average transaction is \u20b185. Consider implementing a category-based budget to identify potential areas for optimization, especially since your \"professional hustlers\" tag suggests multiple income streams that may benefit from structured expense tracking.\n\n4. **Debt Management Strategy**: Your \"loan and gaming\" tag indicates potential debt obligations. Prioritize high-interest debt repayment using a portion of your monthly savings to improve long-term financial health.\n\n5. **Automated Savings Plan**: As a \"prudent planner,\" set up automatic transfers of 10-15% of your cash-ins to a dedicated savings or investment account immediately upon receipt to strengthen your disciplined approach to financial management."
+        "executive_summary": "# Executive Summary: User d962c87b (April 2025)\n\nThe user demonstrated prudent financial behavior in April 2025, spending \u20b1680.42 (70.5% of cash-in) while receiving \u20b1965.54 in deposits. Their spending was primarily through send money transfers (64.4%) and QR payments (34%), with minimal Maya shop activity (1.6%). Cash-in was predominantly via bank transfers (90.4%), supplemented by received transfers (9.6%).\n\nThis spending pattern aligns with their \"prudent planners\" tag, though the \"professional hustlers\" and \"loan and gaming\" tags suggest potential diverse financial activities. The positive cash flow indicates responsible financial management for the month.",
+        "recommendations": "# Financial Recommendations for April 2025\n\nBased on your transaction summary, here are personalized recommendations to enhance your financial health:\n\n## Positive Observations\nYou're currently saving approximately \u20b1285.12 this month (29.5% savings rate), which aligns well with your \"prudent planners\" profile.\n\n## Actionable Recommendations\n\n1. **Diversify Your Payment Methods**\n   Your transactions are heavily concentrated in send money (64.40% of spending). Consider using more QR payments for everyday transactions to better track spending categories and potentially earn rewards or cashback.\n\n2. **Create a Dedicated Emergency Fund**\n   As a \"professional hustler,\" your income may fluctuate. Aim to build an emergency fund of 3-6 months of expenses (approximately \u20b12,040-\u20b14,080 based on current spending) through automated transfers of 10-15% of your monthly cash-ins.\n\n3. **Review \"Loan and Gaming\" Expenses**\n   Your \"loan and gaming\" tag suggests potential high-interest debt or entertainment spending. Track these specific categories next month to ensure they don't exceed 10% of your total budget, and consider allocating gaming funds in advance to prevent overspending.\n\n4. **Establish Regular Bank Transfers**\n   You're already using bank transfers for 90.42% of cash-ins. Set up a consistent schedule (e.g., bi-weekly transfers) to smooth out your cash flow and make budgeting more predictable."
     },
-    "evaluation": {
+    "evaluations": {
         "executive_summary": {
             "ethical_flag": "Safe",
             "confidence": 1.0,
-            "similarity_score": 0.68
+            "similarity_score": 0.59
         },
         "recommendations": {
             "ethical_flag": "Safe",
             "confidence": 0.99,
-            "similarity_score": 0.56
+            "similarity_score": 0.5
         }
     },
-    "chosen_approaches": {
+    "best_approaches": {
         "executive_summary": "chain_of_thought",
         "recommendations": "chain_of_thought"
     }

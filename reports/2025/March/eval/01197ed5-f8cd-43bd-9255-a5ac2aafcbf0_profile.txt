@@ -1,0 +1,6 @@
+User 01197ed5-f8cd-43bd-9255-a5ac2aafcbf0 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 1541.72 with 3 transactions
+- Spending methods include bills payment with 34.55%, send money with 65.45%
+- Total cash-in is 6607.22 with 5 transactions
+- Cash-in methods include bank transfer with 2.74%, loan service with 47.88%, send money with 49.37%
+- User tags: cafe aficionados, digital savvy, prudent planners

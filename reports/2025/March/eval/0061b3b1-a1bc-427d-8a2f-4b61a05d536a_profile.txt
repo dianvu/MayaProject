@@ -1,0 +1,6 @@
+User 0061b3b1-a1bc-427d-8a2f-4b61a05d536a monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 270.41 with 15 transactions
+- Spending methods include qr with 1.06%, send money with 98.94%
+- Total cash-in is 247.08 with 13 transactions
+- Cash-in methods include send money with 100.00%
+- User tags: fitness, prudent planners

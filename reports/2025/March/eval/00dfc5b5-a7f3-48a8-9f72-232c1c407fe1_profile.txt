@@ -1,0 +1,6 @@
+User 00dfc5b5-a7f3-48a8-9f72-232c1c407fe1 monthly transactions Summary (Timestamp: 2025-03)
+- Total spend is 2925.54 with 9 transactions
+- Spending methods include bank transfer with 100.00%
+- Total cash-in is 2448.18 with 26 transactions
+- Cash-in methods include bank transfer with 17.09%, send money with 82.91%
+- User tags: cafe aficionados

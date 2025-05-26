@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "user_id": "0046d90d-7742-4716-9a63-8730bf0e531c",
+        "year": 2025,
+        "month": "March"
+    },
+    "report_components": {
+        "executive_summary": "# Executive Summary: User 0046d90d Monthly Transactions (March 2025)\n\n## Financial Overview\n- **Total Spend**: \u20b111,520.57 across 76 transactions\n- **Total Cash-in**: \u20b114,251.19 across 16 transactions\n- **Net Position**: User maintained a positive balance, spending 80.8% of cash-in amount\n\n## Spending Behavior\n- **Primary Spending Methods**: Bills payment (30.4%), Bank transfer (27.3%), and QR payments (12.1%)\n- **Secondary Methods**: Pay with Maya (11.7%), with remaining spend distributed across ATM, online purchases, and send money transactions\n- **High Transaction Volume**: Average transaction size of \u20b1151.59 suggests frequent, smaller payments\n\n## Cash-in Patterns\n- **Primary Funding Source**: Bank transfers (60.7%)\n- **Secondary Sources**: Disbursement (22.3%) and loan services (16.8%)\n- **Average Cash-in**: \u20b1890.70 per transaction\n\n## User Profile\nUser appears to be a regular bill payer who relies on digital banking, uses QR payments frequently, and supplements income with loans. The \"hungry foodies\" and \"prudent planners\" tags suggest balanced spending on necessities and food.",
+        "recommendations": "# Financial Recommendations\n\nBased on your March 2025 transaction data, here are personalized recommendations to improve your financial health:\n\n## 1. Create a Dedicated Food Budget\nAs a \"hungry foodie,\" you're spending significantly on food-related purchases. Consider using Maya's budgeting tools to allocate a specific monthly amount for food expenses. Aim to reduce your food spending by 10-15% by cooking more meals at home and limiting food delivery services.\n\n## 2. Build an Emergency Fund\nYour spending ($11,520.57) is approximately 80% of your cash-in ($14,251.19), leaving only about 20% for savings. Work toward a 3-month emergency fund by automatically transferring 5-10% of each cash-in to a separate savings account before allocating money for expenses.\n\n## 3. Reduce Loan Dependency\nWith \"loan and gaming\" as a user tag and 16.84% of your cash-in coming from loan services, you may be relying too heavily on borrowed money. Create a debt reduction plan to decrease loan dependency by 5% each month and redirect those funds toward essential expenses.\n\n## 4. Optimize Bill Payments\nBills payments constitute 30.40% of your spending. Review your recurring subscriptions and utilities to identify potential savings. Consider negotiating rates with service providers or eliminating unused subscriptions to reduce this category by at least 10%.\n\n## 5. Track Gaming Expenses\nAs gaming appears in your user tags, ensure you're setting clear limits on entertainment spending. Allocate a specific monthly amount for gaming that doesn't exceed 5% of your total income, and use Maya's transaction categorization to monitor this spending."
+    },
+    "evaluations": {
+        "executive_summary": {
+            "ethical_flag": "Safe",
+            "confidence": 1.0,
+            "similarity_score": 0.66
+        },
+        "recommendations": {
+            "ethical_flag": "Safe",
+            "confidence": 0.99,
+            "similarity_score": 0.55
+        }
+    },
+    "best_approaches": {
+        "executive_summary": "chain_of_thought",
+        "recommendations": "chain_of_thought"
+    }
+}
